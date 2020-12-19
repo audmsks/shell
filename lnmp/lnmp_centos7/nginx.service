@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Unit]
 Description=nginx - high performance web server  
 After=network.target remote-fs.target nss-lookup.target  
@@ -9,3 +10,16 @@ ExecStop=/usr/local/Nginx/sbin/nginx -s stop
 
 [Install]
 WantedBy=multi-user.target 
+=======
+[Unit]
+Description=nginx - high performance web server  
+After=network.target remote-fs.target nss-lookup.target  
+[Service]
+Type=forking  
+ExecStart=/usr/local/Nginx/sbin/nginx -c /usr/local/Nginx/conf/nginx.conf  
+ExecReload=/usr/local/Nginx/sbin/nginx -s reload  
+ExecStop=/usr/local/Nginx/sbin/nginx -s stop
+
+[Install]
+WantedBy=multi-user.target 
+>>>>>>> ca4f5994c54536f1d2fa279520992f81ce51ad92

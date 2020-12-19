@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 安装说明
 # 该安装包环境Centos7.2 64bit 
 # 包含了apache2.4 mysql 5.5.40 php5.6.30
@@ -6,3 +7,13 @@
 # 本安装包达到的效果：基本的lamp架构，所有服务均为开机自行启动，并添加了mongodb扩展
 # 安装完成后访问地址ip/index.php查看详细参数
 具体部署可参考我的博客  https://linuxwt.com/2017/08/03/centos6-8shang-yuan-ma-an-zhuang-da-jian-lamp/
+=======
+# 安装说明
+# 该安装包环境Centos7.2 64bit 
+# 包含了apache2.4 mysql 5.5.40 php5.6.30
+# 详细源码包见lamp.tar.gz
+# 安装步骤：运行脚本lamp.sh
+# 本安装包达到的效果：基本的lamp架构，所有服务均为开机自行启动，并添加了mongodb扩展
+# 安装完成后访问地址ip/index.php查看详细参数
+具体部署可参考我的博客  https://linuxwt.com/2017/08/03/centos6-8shang-yuan-ma-an-zhuang-da-jian-lamp/
+>>>>>>> ca4f5994c54536f1d2fa279520992f81ce51ad92

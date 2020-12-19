@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Unit]
 Description=mysql  
 After=network.target remote-fs.target nss-lookup.target
@@ -11,3 +12,18 @@ ExecStart=/usr/local/mysql/support-files/mysql.server start
 
 [Install]
 WantedBy=multi-user.target  
+=======
+[Unit]
+Description=mysql  
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking  
+ExecStart=/usr/local/mysql/support-files/mysql.server start  
+#ExecReload=/usr/local/mysql/support-files/mysql.server restart
+#ExecStop=/usr/local/mysql/support-files/mysql.server stop
+#PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target  
+>>>>>>> ca4f5994c54536f1d2fa279520992f81ce51ad92

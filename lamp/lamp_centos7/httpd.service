@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Unit]
 Description=apachex - high performance web server  
 After=network.target remote-fs.target nss-lookup.target
@@ -10,3 +11,17 @@ ExecStop=/usr/local/apache2/bin/apachectl stop
 
 [Install]
 WantedBy=multi-user.target  
+=======
+[Unit]
+Description=apachex - high performance web server  
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking  
+ExecStart=/usr/local/apache2/bin/apachectl start  
+ExecReload=/usr/local/apache2/bin/apachectl restart  
+ExecStop=/usr/local/apache2/bin/apachectl stop
+
+[Install]
+WantedBy=multi-user.target  
+>>>>>>> ca4f5994c54536f1d2fa279520992f81ce51ad92
